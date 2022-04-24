@@ -1,0 +1,13 @@
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\bin\Debug\QuickSearch_2008.dll
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\bin\Debug\QuickSearch_2008.pdb
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\bin\Debug\QuickSearch_2008.xml
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\bin\Debug\QuickSearch_2008.dll.manifest
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\bin\Debug\QuickSearch_2008.vsto
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\obj\Debug\ResolveAssemblyReference.cache
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\obj\Debug\QuickSearch_2008.Resources.resources
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\obj\Debug\QuickSearch_2008.SearchResults.resources
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\obj\Debug\QuickSearch_2008.SearchRibbon.resources
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\obj\Debug\QuickSearch_2008.vbproj.GenerateResource.Cache
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\obj\Debug\QuickSearch_2008.dll
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\obj\Debug\QuickSearch_2008.xml
+C:\_Projects\ProVSTO\c06\QuickSearch_2008\QuickSearch_2008\obj\Debug\QuickSearch_2008.pdb

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="CLI309.dll" version="1.0.0.0" publicKeyToken="b73e7ecb7b9c1bef" language="neutral" processorArchitecture="msil" type="win32" />
+  <description xmlns="urn:schemas-microsoft-com:asm.v1">CLI309 - Outlook add-in created with Visual Studio Tools for Office</description>
+  <application />
+  <entryPoint>
+    <co.v1:customHostSpecified />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="ComponentFactory.Krypton.Toolkit" version="2.6.1.0" publicKeyToken="A87E673E9ECB6E8E" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="ILoader" version="2.0.5201.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Interop.Outlook" version="12.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Interop.SmartTag" version="12.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common.v9.0" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.Outlook.v9.0" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.v9.0" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Vbe.Interop.Forms" version="11.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.ServerDocument.v9.0" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="office" version="12.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="SBAIAPI" version="1.0.2409.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="SBAIAPIV2" version="2.0.5201.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.Entity" version="3.5.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Telerik.Charting" version="2.0.0.0" publicKeyToken="D14F3DCC8E3E8763" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Telerik.WinControls" version="6.0.1.0" publicKeyToken="5BB2A467CBEC794E" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Telerik.WinControls.RadChart" version="6.0.1.0" publicKeyToken="5BB2A467CBEC794E" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="TelerikCommon" version="6.0.1.0" publicKeyToken="5BB2A467CBEC794E" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CLI309.dll" size="155136">
+      <assemblyIdentity name="CLI309" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>nJT+EWC44mt//s/aPv2YscEZQb0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CLI309.dll.config" size="1478">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7kIcMcMduqDPlSiWJbvxKYoKCWU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <vstav2:addIn xmlns:vstav2="urn:schemas-microsoft-com:vsta.v2">
+    <vstav2:entryPoints>
+      <vstav2:entryPoint class="CLI309.ThisAddIn">
+        <assemblyIdentity name="CLI309" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      </vstav2:entryPoint>
+    </vstav2:entryPoints>
+    <vstav2:update enabled="true">
+      <vstav2:expiration maximumAge="7" unit="days" />
+    </vstav2:update>
+    <vstav2:application>
+      <vstov3:customization xmlns:vstov3="urn:schemas-microsoft-com:vsto.v3">
+        <vstov3:appAddIn application="Outlook" loadBehavior="3" keyName="CLI309">
+          <vstov3:friendlyName>CLI309</vstov3:friendlyName>
+          <vstov3:description>CLI309 - Outlook add-in created with Visual Studio Tools for Office</vstov3:description>
+          <vstov3:formRegions>
+            <vstov3:formRegion name="CLI309.AccountForm">
+              <vstov3:messageClass name="IPM.Contact.Account" />
+            </vstov3:formRegion>
+            <vstov3:formRegion name="CLI309.TimeRegion">
+              <vstov3:messageClass name="IPM.Appointment" />
+            </vstov3:formRegion>
+          </vstov3:formRegions>
+        </vstov3:appAddIn>
+      </vstov3:customization>
+    </vstav2:application>
+  </vstav2:addIn>
+<publisherIdentity name="CN=ORCASBETA2_VSTS\Administrator" issuerKeyHash="7de3e256a33812bb44e03f45c89daf3fed92a8e4" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>m8WaGOyeCMrLKjdDlpnFRKXZsf8=</DigestValue></Reference></SignedInfo><SignatureValue>WVd230jIMnzZG+jAKey9S7PR+J59R64kTZAUBY58evvbkltatAQWNk8Z/hAmUQxToO+ae+21n2GhaoS3R/tm3JDf5CVqvSwDnf9sro8Ya/JhP5rS5Lz1ZR48XM30wWNuv8caR3jIbXfHUKlR3dLkJ6uS7FpxUOV4D83jr5BXCfU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xr1uKbnlPT2QUVgfWAkPKSu9wenKa6lMbBzo2cWNaIVguWJY4PUffPRkP0rkHqexHwZA/YUwibqc/qt0+/Moy5bQTafMBHsj0EQq9E5xY4YTxA2X6vc7+NqDBZHa7YpZVDZFkyOxoZU1DGiINmhaiJHgXMGcxGxnIeD+Wg6BHgc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ffb1d9a544c5999643372acbca089eec189ac59b" Description="" Url=""><as:assemblyIdentity name="CLI309.dll" version="1.0.0.0" publicKeyToken="b73e7ecb7b9c1bef" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ORCASBETA2_VSTS\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Bwlte4grn8hfT8Xj4i6GEH94yuw=</DigestValue></Reference></SignedInfo><SignatureValue>HVS5JegC3Bi+MC1wiIEDW2okF6ZcezsYf0mVEV3H72K8ePre0g4PDNFfsjHUNBmsk+CJNxse33JUiK+6pEEoNmv1A+Os6vgzJTXkxQWsju3DE6QnhX/UJOBr93KSgnAMDdYIJXqlL0ecI8gkoddUqdkUiM7jy6awXD1nLkkBeSw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xr1uKbnlPT2QUVgfWAkPKSu9wenKa6lMbBzo2cWNaIVguWJY4PUffPRkP0rkHqexHwZA/YUwibqc/qt0+/Moy5bQTafMBHsj0EQq9E5xY4YTxA2X6vc7+NqDBZHa7YpZVDZFkyOxoZU1DGiINmhaiJHgXMGcxGxnIeD+Wg6BHgc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICBTCCAXKgAwIBAgIQ4rpQ5qjuCqVHu66H6SGiXTAJBgUrDgMCHQUAMEUxQzBBBgNVBAMeOgBPAFIAQwBBAFMAQgBFAFQAQQAyAF8AVgBTAFQAUwBcAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIwHhcNMDgwMTA0MTgxNzUwWhcNMDkwMTA0MDAxNzUwWjBFMUMwQQYDVQQDHjoATwBSAEMAQQBTAEIARQBUAEEAMgBfAFYAUwBUAFMAXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDGvW4pueU9PZBRWB9YCQ8pK73B6cprqUxsHOjZxY1ohWC5Yljg9R989GQ/SuQep7EfBkD9hTCJupz+q3T78yjLltBNp8wEeyPQRCr0TnFjhhPEDZfq9zv42oMFkdrtillUNkWTI7GhlTUMaIg2aFqIkeBcwZzEbGch4P5aDoEeBwIDAQABMAkGBSsOAwIdBQADgYEAd69BC4OLPUd1sEVJYy69NNqKeJrQo1T0eEtnQOQ1q55mRZPRP2TRJXOGWPvnYMQ838JAvFXv3FJoSJIPOEXOWuOAJ6SV2MngN7kOi6++dCNB2cde/MJdqusO2sGxqBH7vOr+M2bgSmlCF9r8qy0AXSzuA040ILnJ8iu3JoYnODs=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ReportBuilder
+</name>
+</assembly>
+<members>
+<member name="P:ReportBuilder.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ReportBuilder.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ReportBuilder.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:ReportBuilder.ThisDocument.#ctor">
+</member><member name="M:ReportBuilder.ThisDocument.Initialize">
+</member><member name="M:ReportBuilder.ThisDocument.FinishInitialization">
+</member><member name="M:ReportBuilder.ThisDocument.InitializeDataBindings">
+</member><member name="M:ReportBuilder.ThisDocument.InitializeCachedData">
+</member><member name="M:ReportBuilder.ThisDocument.InitializeData">
+</member><member name="M:ReportBuilder.ThisDocument.BindToData">
+</member><member name="M:ReportBuilder.ThisDocument.StartCaching(System.String)">
+</member><member name="M:ReportBuilder.ThisDocument.StopCaching(System.String)">
+</member><member name="M:ReportBuilder.ThisDocument.IsCached(System.String)">
+</member><member name="M:ReportBuilder.ThisDocument.BeginInitialization">
+</member><member name="M:ReportBuilder.ThisDocument.EndInitialization">
+</member><member name="M:ReportBuilder.ThisDocument.InitializeControls">
+</member><member name="M:ReportBuilder.ThisDocument.InitializeComponents">
+</member><member name="M:ReportBuilder.ThisDocument.NeedsFill(System.String)">
+</member><member name="M:ReportBuilder.ThisDocument.OnShutdown">
+</member><member name="T:ReportBuilder.ThisDocument">
+</member><member name="M:ReportBuilder.Globals.#ctor">
+</member><member name="T:ReportBuilder.Globals">
+</member><member name="T:ReportBuilder.ThisRibbonCollection">
+</member><member name="T:ReportBuilder.DocSnippetsDataSet.SnippetsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ReportBuilder.DocSnippetsDataSet.SnippetsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ReportBuilder.DocSnippetsDataSet.SnippetsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ReportBuilder.DocSnippetsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ReportBuilder.DocSnippetsDataSetTableAdapters.SnippetsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ReportBuilder.DocSnippetsDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(ReportBuilder.DocSnippetsDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ReportBuilder.DocSnippetsDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(ReportBuilder.DocSnippetsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ReportBuilder.DocSnippetsDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(ReportBuilder.DocSnippetsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ReportBuilder.DocSnippetsDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ReportBuilder.DocSnippetsDataSetTableAdapters.TableAdapterManager.UpdateAll(ReportBuilder.DocSnippetsDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ReportBuilder.DocSnippetsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ReportBuilder.DocSnippetsDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ReportBuilder.DocSnippetsDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

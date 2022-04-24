@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="AdventureWorksLT" Class="SalesDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TYRANTSERVERV;Initial Catalog=AdventureWorksLT;Integrated Security=True" SettingsObjectName="CLI309.MySettings" SettingsPropertyName="AdventureWorksLTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="SalesLT.Services" Member="Services">
+    <Type Name="Service">
+      <Column Name="ServiceID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AcctId" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Association Name="Service_Opportunity" Member="Opportunities" OtherKey="ServiceID" Type="Opportunity" />
+    </Type>
+  </Table>
+  <Table Name="SalesLT.Tasks" Member="Tasks">
+    <Type Name="Task">
+      <Column Name="TaskID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OpportunityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TaskName" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Notes" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PercentComplete" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Priority" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Employee_Task" Member="Employee" ThisKey="EmployeeID" Type="Employee" IsForeignKey="true" />
+      <Association Name="Opportunity_Task" Member="Opportunity" ThisKey="OpportunityID" Type="Opportunity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="SalesLT.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="OfficePhoneNumber" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="MobilePhoneNumber" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="FaxPhoneNumber" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="StreetAddress" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="NChar(2)" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Employee_Task" Member="Tasks" OtherKey="EmployeeID" Type="Task" />
+      <Association Name="Employee_Opportunity" Member="Opportunities" OtherKey="EmployeeID" Type="Opportunity" />
+    </Type>
+  </Table>
+  <Table Name="SalesLT.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="CustomerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameStyle" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MiddleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Suffix" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="SalesPerson" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="PasswordHash" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Notes" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="AccountingGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="Customer_Opportunity" Member="Opportunities" OtherKey="CustomerID" Type="Opportunity" />
+    </Type>
+  </Table>
+  <Table Name="SalesLT.Opportunities" Member="Opportunities">
+    <Type Name="Opportunity">
+      <Column Name="OpportunityID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OpportunityName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ServiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EstCloseDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EstRevenue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="EstStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EstEndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Probability" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Closed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Source" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountingGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActualCloseDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Opportunity_Task" Member="Tasks" OtherKey="OpportunityID" Type="Task" />
+      <Association Name="Customer_Opportunity" Member="Customer" ThisKey="CustomerID" Type="Customer" IsForeignKey="true" />
+      <Association Name="Employee_Opportunity" Member="Employee" ThisKey="EmployeeID" Type="Employee" IsForeignKey="true" />
+      <Association Name="Service_Opportunity" Member="Service" ThisKey="ServiceID" Type="Service" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

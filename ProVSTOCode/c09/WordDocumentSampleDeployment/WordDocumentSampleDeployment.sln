@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WordDocumentSampleDeployment", "WordDocumentSampleDeployment\WordDocumentSampleDeployment.vbproj", "{4E06449C-73E6-4C79-B213-0704BB49D032}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WordDocumentSampleDeployment\\WordDocumentSampleDeployment.vbproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = WordDocumentSampleDeployment\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E06449C-73E6-4C79-B213-0704BB49D032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E06449C-73E6-4C79-B213-0704BB49D032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E06449C-73E6-4C79-B213-0704BB49D032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E06449C-73E6-4C79-B213-0704BB49D032}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

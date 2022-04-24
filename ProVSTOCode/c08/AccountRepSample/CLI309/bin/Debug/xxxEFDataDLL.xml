@@ -1,0 +1,1430 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+xxxEFDataDLL
+</name>
+</assembly>
+<members>
+<member name="M:xxxEFDataDLL.SalesModel.SalesEntities.#ctor">
+	<summary>
+Initializes a new SalesEntities object using the connection string found in the 'SalesEntities' section of the application configuration file.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.#ctor(System.String)">
+	<summary>
+Initialize a new SalesEntities object.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+Initialize a new SalesEntities object.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.BuildVersion">
+	<summary>
+There are no comments for BuildVersion in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.ErrorLog">
+	<summary>
+There are no comments for ErrorLog in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.sysdiagrams">
+	<summary>
+There are no comments for sysdiagrams in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.Address">
+	<summary>
+There are no comments for Address in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.Customer">
+	<summary>
+There are no comments for Customer in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.CustomerAddress">
+	<summary>
+There are no comments for CustomerAddress in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.Employee">
+	<summary>
+There are no comments for Employee in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.Opportunities">
+	<summary>
+There are no comments for Opportunities in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.Product">
+	<summary>
+There are no comments for Product in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.ProductCategory">
+	<summary>
+There are no comments for ProductCategory in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.ProductDescription">
+	<summary>
+There are no comments for ProductDescription in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.ProductModel">
+	<summary>
+There are no comments for ProductModel in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.ProductModelProductDescription">
+	<summary>
+There are no comments for ProductModelProductDescription in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.SalesOrderDetail">
+	<summary>
+There are no comments for SalesOrderDetail in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.SalesOrderHeader">
+	<summary>
+There are no comments for SalesOrderHeader in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.Services">
+	<summary>
+There are no comments for Services in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.Tasks">
+	<summary>
+There are no comments for Tasks in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.vGetAllCategories">
+	<summary>
+There are no comments for vGetAllCategories in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.vProductAndDescription">
+	<summary>
+There are no comments for vProductAndDescription in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesEntities.vProductModelCatalogDescription">
+	<summary>
+There are no comments for vProductModelCatalogDescription in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToBuildVersion(xxxEFDataDLL.SalesModel.BuildVersion)">
+	<summary>
+There are no comments for BuildVersion in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToErrorLog(xxxEFDataDLL.SalesModel.ErrorLog)">
+	<summary>
+There are no comments for ErrorLog in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddTosysdiagrams(xxxEFDataDLL.SalesModel.sysdiagrams)">
+	<summary>
+There are no comments for sysdiagrams in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToAddress(xxxEFDataDLL.SalesModel.Address)">
+	<summary>
+There are no comments for Address in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToCustomer(xxxEFDataDLL.SalesModel.Customer)">
+	<summary>
+There are no comments for Customer in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToCustomerAddress(xxxEFDataDLL.SalesModel.CustomerAddress)">
+	<summary>
+There are no comments for CustomerAddress in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToEmployee(xxxEFDataDLL.SalesModel.Employee)">
+	<summary>
+There are no comments for Employee in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToOpportunities(xxxEFDataDLL.SalesModel.Opportunities)">
+	<summary>
+There are no comments for Opportunities in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToProduct(xxxEFDataDLL.SalesModel.Product)">
+	<summary>
+There are no comments for Product in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToProductCategory(xxxEFDataDLL.SalesModel.ProductCategory)">
+	<summary>
+There are no comments for ProductCategory in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToProductDescription(xxxEFDataDLL.SalesModel.ProductDescription)">
+	<summary>
+There are no comments for ProductDescription in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToProductModel(xxxEFDataDLL.SalesModel.ProductModel)">
+	<summary>
+There are no comments for ProductModel in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToProductModelProductDescription(xxxEFDataDLL.SalesModel.ProductModelProductDescription)">
+	<summary>
+There are no comments for ProductModelProductDescription in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToSalesOrderDetail(xxxEFDataDLL.SalesModel.SalesOrderDetail)">
+	<summary>
+There are no comments for SalesOrderDetail in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToSalesOrderHeader(xxxEFDataDLL.SalesModel.SalesOrderHeader)">
+	<summary>
+There are no comments for SalesOrderHeader in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToServices(xxxEFDataDLL.SalesModel.Services)">
+	<summary>
+There are no comments for Services in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddToTasks(xxxEFDataDLL.SalesModel.Tasks)">
+	<summary>
+There are no comments for Tasks in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddTovGetAllCategories(xxxEFDataDLL.SalesModel.vGetAllCategories)">
+	<summary>
+There are no comments for vGetAllCategories in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddTovProductAndDescription(xxxEFDataDLL.SalesModel.vProductAndDescription)">
+	<summary>
+There are no comments for vProductAndDescription in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesEntities.AddTovProductModelCatalogDescription(xxxEFDataDLL.SalesModel.vProductModelCatalogDescription)">
+	<summary>
+There are no comments for vProductModelCatalogDescription in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.SalesEntities">
+	<summary>
+There are no comments for SalesEntities in the schema.
+</summary>
+</member><member name="M:xxxEFDataDLL.SalesModel.BuildVersion.CreateBuildVersion(System.Byte,System.String,System.DateTime,System.DateTime)">
+	<summary>
+Create a new BuildVersion object.
+</summary>
+	<param name="systemInformationID">Initial value of SystemInformationID.</param>
+	<param name="database_Version">Initial value of Database_Version.</param>
+	<param name="versionDate">Initial value of VersionDate.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.BuildVersion.SystemInformationID">
+	<summary>
+There are no comments for Property SystemInformationID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.BuildVersion.Database_Version">
+	<summary>
+There are no comments for Property Database_Version in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.BuildVersion.VersionDate">
+	<summary>
+There are no comments for Property VersionDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.BuildVersion.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.BuildVersion">
+	<summary>
+There are no comments for SalesModel.BuildVersion in the schema.
+</summary>
+	<KeyProperties>
+SystemInformationID
+Database_Version
+VersionDate
+ModifiedDate
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.ErrorLog.CreateErrorLog(System.Int32,System.DateTime,System.String,System.Int32,System.String)">
+	<summary>
+Create a new ErrorLog object.
+</summary>
+	<param name="errorLogID">Initial value of ErrorLogID.</param>
+	<param name="errorTime">Initial value of ErrorTime.</param>
+	<param name="userName">Initial value of UserName.</param>
+	<param name="errorNumber">Initial value of ErrorNumber.</param>
+	<param name="errorMessage">Initial value of ErrorMessage.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.ErrorLog.ErrorLogID">
+	<summary>
+There are no comments for Property ErrorLogID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ErrorLog.ErrorTime">
+	<summary>
+There are no comments for Property ErrorTime in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ErrorLog.UserName">
+	<summary>
+There are no comments for Property UserName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ErrorLog.ErrorNumber">
+	<summary>
+There are no comments for Property ErrorNumber in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ErrorLog.ErrorSeverity">
+	<summary>
+There are no comments for Property ErrorSeverity in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ErrorLog.ErrorState">
+	<summary>
+There are no comments for Property ErrorState in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ErrorLog.ErrorProcedure">
+	<summary>
+There are no comments for Property ErrorProcedure in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ErrorLog.ErrorLine">
+	<summary>
+There are no comments for Property ErrorLine in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ErrorLog.ErrorMessage">
+	<summary>
+There are no comments for Property ErrorMessage in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.ErrorLog">
+	<summary>
+There are no comments for SalesModel.ErrorLog in the schema.
+</summary>
+	<KeyProperties>
+ErrorLogID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.sysdiagrams.Createsysdiagrams(System.String,System.Int32,System.Int32)">
+	<summary>
+Create a new sysdiagrams object.
+</summary>
+	<param name="name">Initial value of name.</param>
+	<param name="principal_id">Initial value of principal_id.</param>
+	<param name="diagram_id">Initial value of diagram_id.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.sysdiagrams.name">
+	<summary>
+There are no comments for Property name in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.sysdiagrams.principal_id">
+	<summary>
+There are no comments for Property principal_id in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.sysdiagrams.diagram_id">
+	<summary>
+There are no comments for Property diagram_id in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.sysdiagrams.version">
+	<summary>
+There are no comments for Property version in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.sysdiagrams.definition">
+	<summary>
+There are no comments for Property definition in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.sysdiagrams">
+	<summary>
+There are no comments for SalesModel.sysdiagrams in the schema.
+</summary>
+	<KeyProperties>
+diagram_id
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.Address.CreateAddress(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Guid,System.DateTime)">
+	<summary>
+Create a new Address object.
+</summary>
+	<param name="addressID">Initial value of AddressID.</param>
+	<param name="addressLine1">Initial value of AddressLine1.</param>
+	<param name="city">Initial value of City.</param>
+	<param name="stateProvince">Initial value of StateProvince.</param>
+	<param name="countryRegion">Initial value of CountryRegion.</param>
+	<param name="postalCode">Initial value of PostalCode.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.AddressID">
+	<summary>
+There are no comments for Property AddressID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.AddressLine1">
+	<summary>
+There are no comments for Property AddressLine1 in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.AddressLine2">
+	<summary>
+There are no comments for Property AddressLine2 in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.City">
+	<summary>
+There are no comments for Property City in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.StateProvince">
+	<summary>
+There are no comments for Property StateProvince in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.CountryRegion">
+	<summary>
+There are no comments for Property CountryRegion in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.PostalCode">
+	<summary>
+There are no comments for Property PostalCode in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.CustomerAddress">
+	<summary>
+There are no comments for CustomerAddress in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.SalesOrderHeader">
+	<summary>
+There are no comments for SalesOrderHeader in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Address.SalesOrderHeader1">
+	<summary>
+There are no comments for SalesOrderHeader1 in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.Address">
+	<summary>
+There are no comments for SalesModel.Address in the schema.
+</summary>
+	<KeyProperties>
+AddressID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.Customer.CreateCustomer(System.Int32,System.Boolean,System.String,System.String,System.String,System.String,System.Guid,System.DateTime)">
+	<summary>
+Create a new Customer object.
+</summary>
+	<param name="customerID">Initial value of CustomerID.</param>
+	<param name="nameStyle">Initial value of NameStyle.</param>
+	<param name="firstName">Initial value of FirstName.</param>
+	<param name="lastName">Initial value of LastName.</param>
+	<param name="passwordHash">Initial value of PasswordHash.</param>
+	<param name="passwordSalt">Initial value of PasswordSalt.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.CustomerID">
+	<summary>
+There are no comments for Property CustomerID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.NameStyle">
+	<summary>
+There are no comments for Property NameStyle in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.Title">
+	<summary>
+There are no comments for Property Title in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.FirstName">
+	<summary>
+There are no comments for Property FirstName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.MiddleName">
+	<summary>
+There are no comments for Property MiddleName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.LastName">
+	<summary>
+There are no comments for Property LastName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.Suffix">
+	<summary>
+There are no comments for Property Suffix in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.CompanyName">
+	<summary>
+There are no comments for Property CompanyName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.SalesPerson">
+	<summary>
+There are no comments for Property SalesPerson in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.EmailAddress">
+	<summary>
+There are no comments for Property EmailAddress in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.Phone">
+	<summary>
+There are no comments for Property Phone in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.PasswordHash">
+	<summary>
+There are no comments for Property PasswordHash in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.PasswordSalt">
+	<summary>
+There are no comments for Property PasswordSalt in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.CustomerAddress">
+	<summary>
+There are no comments for CustomerAddress in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.Opportunities">
+	<summary>
+There are no comments for Opportunities in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Customer.SalesOrderHeader">
+	<summary>
+There are no comments for SalesOrderHeader in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.Customer">
+	<summary>
+There are no comments for SalesModel.Customer in the schema.
+</summary>
+	<KeyProperties>
+CustomerID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.CustomerAddress.CreateCustomerAddress(System.Int32,System.Int32,System.String,System.Guid,System.DateTime)">
+	<summary>
+Create a new CustomerAddress object.
+</summary>
+	<param name="customerID">Initial value of CustomerID.</param>
+	<param name="addressID">Initial value of AddressID.</param>
+	<param name="addressType">Initial value of AddressType.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.CustomerAddress.CustomerID">
+	<summary>
+There are no comments for Property CustomerID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.CustomerAddress.AddressID">
+	<summary>
+There are no comments for Property AddressID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.CustomerAddress.AddressType">
+	<summary>
+There are no comments for Property AddressType in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.CustomerAddress.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.CustomerAddress.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.CustomerAddress.Address">
+	<summary>
+There are no comments for Address in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.CustomerAddress.AddressReference">
+	<summary>
+There are no comments for Address in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.CustomerAddress.Customer">
+	<summary>
+There are no comments for Customer in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.CustomerAddress.CustomerReference">
+	<summary>
+There are no comments for Customer in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.CustomerAddress">
+	<summary>
+There are no comments for SalesModel.CustomerAddress in the schema.
+</summary>
+	<KeyProperties>
+CustomerID
+AddressID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.Employee.CreateEmployee(System.Int32,System.String)">
+	<summary>
+Create a new Employee object.
+</summary>
+	<param name="employeeID">Initial value of EmployeeID.</param>
+	<param name="fullName">Initial value of FullName.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.EmployeeID">
+	<summary>
+There are no comments for Property EmployeeID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.FullName">
+	<summary>
+There are no comments for Property FullName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.FirstName">
+	<summary>
+There are no comments for Property FirstName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.LastName">
+	<summary>
+There are no comments for Property LastName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.Status">
+	<summary>
+There are no comments for Property Status in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.Email">
+	<summary>
+There are no comments for Property Email in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.OfficePhoneNumber">
+	<summary>
+There are no comments for Property OfficePhoneNumber in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.MobilePhoneNumber">
+	<summary>
+There are no comments for Property MobilePhoneNumber in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.FaxPhoneNumber">
+	<summary>
+There are no comments for Property FaxPhoneNumber in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.StreetAddress">
+	<summary>
+There are no comments for Property StreetAddress in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.City">
+	<summary>
+There are no comments for Property City in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.State">
+	<summary>
+There are no comments for Property State in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.PostalCode">
+	<summary>
+There are no comments for Property PostalCode in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.Opportunities">
+	<summary>
+There are no comments for Opportunities in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Employee.Tasks">
+	<summary>
+There are no comments for Tasks in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.Employee">
+	<summary>
+There are no comments for SalesModel.Employee in the schema.
+</summary>
+	<KeyProperties>
+EmployeeID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.Opportunities.CreateOpportunities(System.Int32,System.String)">
+	<summary>
+Create a new Opportunities object.
+</summary>
+	<param name="opportunityID">Initial value of OpportunityID.</param>
+	<param name="opportunityName">Initial value of OpportunityName.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.OpportunityID">
+	<summary>
+There are no comments for Property OpportunityID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.OpportunityName">
+	<summary>
+There are no comments for Property OpportunityName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.Notes">
+	<summary>
+There are no comments for Property Notes in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.DateCreated">
+	<summary>
+There are no comments for Property DateCreated in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.EstCloseDate">
+	<summary>
+There are no comments for Property EstCloseDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.EstRevenue">
+	<summary>
+There are no comments for Property EstRevenue in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.EstStartDate">
+	<summary>
+There are no comments for Property EstStartDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.EstEndDate">
+	<summary>
+There are no comments for Property EstEndDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.Probability">
+	<summary>
+There are no comments for Property Probability in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.Closed">
+	<summary>
+There are no comments for Property Closed in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.Category">
+	<summary>
+There are no comments for Property Category in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.Source">
+	<summary>
+There are no comments for Property Source in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.Customer">
+	<summary>
+There are no comments for Customer in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.CustomerReference">
+	<summary>
+There are no comments for Customer in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.Employee">
+	<summary>
+There are no comments for Employee in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.EmployeeReference">
+	<summary>
+There are no comments for Employee in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.Services">
+	<summary>
+There are no comments for Services in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.ServicesReference">
+	<summary>
+There are no comments for Services in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Opportunities.Tasks">
+	<summary>
+There are no comments for Tasks in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.Opportunities">
+	<summary>
+There are no comments for SalesModel.Opportunities in the schema.
+</summary>
+	<KeyProperties>
+OpportunityID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.Product.CreateProduct(System.Int32,System.String,System.String,System.Decimal,System.Decimal,System.DateTime,System.Guid,System.DateTime)">
+	<summary>
+Create a new Product object.
+</summary>
+	<param name="productID">Initial value of ProductID.</param>
+	<param name="name">Initial value of Name.</param>
+	<param name="productNumber">Initial value of ProductNumber.</param>
+	<param name="standardCost">Initial value of StandardCost.</param>
+	<param name="listPrice">Initial value of ListPrice.</param>
+	<param name="sellStartDate">Initial value of SellStartDate.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ProductID">
+	<summary>
+There are no comments for Property ProductID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ProductNumber">
+	<summary>
+There are no comments for Property ProductNumber in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.Color">
+	<summary>
+There are no comments for Property Color in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.StandardCost">
+	<summary>
+There are no comments for Property StandardCost in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ListPrice">
+	<summary>
+There are no comments for Property ListPrice in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.Size">
+	<summary>
+There are no comments for Property Size in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.Weight">
+	<summary>
+There are no comments for Property Weight in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.SellStartDate">
+	<summary>
+There are no comments for Property SellStartDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.SellEndDate">
+	<summary>
+There are no comments for Property SellEndDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.DiscontinuedDate">
+	<summary>
+There are no comments for Property DiscontinuedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ThumbNailPhoto">
+	<summary>
+There are no comments for Property ThumbNailPhoto in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ThumbnailPhotoFileName">
+	<summary>
+There are no comments for Property ThumbnailPhotoFileName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ProductCategory">
+	<summary>
+There are no comments for ProductCategory in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ProductCategoryReference">
+	<summary>
+There are no comments for ProductCategory in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ProductModel">
+	<summary>
+There are no comments for ProductModel in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.ProductModelReference">
+	<summary>
+There are no comments for ProductModel in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Product.SalesOrderDetail">
+	<summary>
+There are no comments for SalesOrderDetail in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.Product">
+	<summary>
+There are no comments for SalesModel.Product in the schema.
+</summary>
+	<KeyProperties>
+ProductID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.ProductCategory.CreateProductCategory(System.Int32,System.String,System.Guid,System.DateTime)">
+	<summary>
+Create a new ProductCategory object.
+</summary>
+	<param name="productCategoryID">Initial value of ProductCategoryID.</param>
+	<param name="name">Initial value of Name.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductCategory.ProductCategoryID">
+	<summary>
+There are no comments for Property ProductCategoryID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductCategory.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductCategory.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductCategory.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductCategory.Product">
+	<summary>
+There are no comments for Product in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductCategory.ProductCategory1">
+	<summary>
+There are no comments for ProductCategory1 in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductCategory.ProductCategory2">
+	<summary>
+There are no comments for ProductCategory2 in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductCategory.ProductCategory2Reference">
+	<summary>
+There are no comments for ProductCategory2 in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.ProductCategory">
+	<summary>
+There are no comments for SalesModel.ProductCategory in the schema.
+</summary>
+	<KeyProperties>
+ProductCategoryID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.ProductDescription.CreateProductDescription(System.Int32,System.String,System.Guid,System.DateTime)">
+	<summary>
+Create a new ProductDescription object.
+</summary>
+	<param name="productDescriptionID">Initial value of ProductDescriptionID.</param>
+	<param name="description">Initial value of Description.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductDescription.ProductDescriptionID">
+	<summary>
+There are no comments for Property ProductDescriptionID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductDescription.Description">
+	<summary>
+There are no comments for Property Description in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductDescription.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductDescription.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductDescription.ProductModelProductDescription">
+	<summary>
+There are no comments for ProductModelProductDescription in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.ProductDescription">
+	<summary>
+There are no comments for SalesModel.ProductDescription in the schema.
+</summary>
+	<KeyProperties>
+ProductDescriptionID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.ProductModel.CreateProductModel(System.Int32,System.String,System.Guid,System.DateTime)">
+	<summary>
+Create a new ProductModel object.
+</summary>
+	<param name="productModelID">Initial value of ProductModelID.</param>
+	<param name="name">Initial value of Name.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModel.ProductModelID">
+	<summary>
+There are no comments for Property ProductModelID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModel.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModel.CatalogDescription">
+	<summary>
+There are no comments for Property CatalogDescription in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModel.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModel.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModel.Product">
+	<summary>
+There are no comments for Product in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModel.ProductModelProductDescription">
+	<summary>
+There are no comments for ProductModelProductDescription in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.ProductModel">
+	<summary>
+There are no comments for SalesModel.ProductModel in the schema.
+</summary>
+	<KeyProperties>
+ProductModelID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.ProductModelProductDescription.CreateProductModelProductDescription(System.Int32,System.Int32,System.String,System.Guid,System.DateTime)">
+	<summary>
+Create a new ProductModelProductDescription object.
+</summary>
+	<param name="productModelID">Initial value of ProductModelID.</param>
+	<param name="productDescriptionID">Initial value of ProductDescriptionID.</param>
+	<param name="culture">Initial value of Culture.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModelProductDescription.ProductModelID">
+	<summary>
+There are no comments for Property ProductModelID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModelProductDescription.ProductDescriptionID">
+	<summary>
+There are no comments for Property ProductDescriptionID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModelProductDescription.Culture">
+	<summary>
+There are no comments for Property Culture in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModelProductDescription.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModelProductDescription.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModelProductDescription.ProductDescription">
+	<summary>
+There are no comments for ProductDescription in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModelProductDescription.ProductDescriptionReference">
+	<summary>
+There are no comments for ProductDescription in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModelProductDescription.ProductModel">
+	<summary>
+There are no comments for ProductModel in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.ProductModelProductDescription.ProductModelReference">
+	<summary>
+There are no comments for ProductModel in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.ProductModelProductDescription">
+	<summary>
+There are no comments for SalesModel.ProductModelProductDescription in the schema.
+</summary>
+	<KeyProperties>
+ProductModelID
+ProductDescriptionID
+Culture
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesOrderDetail.CreateSalesOrderDetail(System.Int32,System.Int32,System.Int16,System.Decimal,System.Decimal,System.Decimal,System.Guid,System.DateTime)">
+	<summary>
+Create a new SalesOrderDetail object.
+</summary>
+	<param name="salesOrderID">Initial value of SalesOrderID.</param>
+	<param name="salesOrderDetailID">Initial value of SalesOrderDetailID.</param>
+	<param name="orderQty">Initial value of OrderQty.</param>
+	<param name="unitPrice">Initial value of UnitPrice.</param>
+	<param name="unitPriceDiscount">Initial value of UnitPriceDiscount.</param>
+	<param name="lineTotal">Initial value of LineTotal.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.SalesOrderID">
+	<summary>
+There are no comments for Property SalesOrderID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.SalesOrderDetailID">
+	<summary>
+There are no comments for Property SalesOrderDetailID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.OrderQty">
+	<summary>
+There are no comments for Property OrderQty in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.UnitPrice">
+	<summary>
+There are no comments for Property UnitPrice in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.UnitPriceDiscount">
+	<summary>
+There are no comments for Property UnitPriceDiscount in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.LineTotal">
+	<summary>
+There are no comments for Property LineTotal in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.Product">
+	<summary>
+There are no comments for Product in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.ProductReference">
+	<summary>
+There are no comments for Product in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.SalesOrderHeader">
+	<summary>
+There are no comments for SalesOrderHeader in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderDetail.SalesOrderHeaderReference">
+	<summary>
+There are no comments for SalesOrderHeader in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.SalesOrderDetail">
+	<summary>
+There are no comments for SalesModel.SalesOrderDetail in the schema.
+</summary>
+	<KeyProperties>
+SalesOrderID
+SalesOrderDetailID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.SalesOrderHeader.CreateSalesOrderHeader(System.Int32,System.Byte,System.DateTime,System.DateTime,System.Byte,System.Boolean,System.String,System.String,System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Guid,System.DateTime)">
+	<summary>
+Create a new SalesOrderHeader object.
+</summary>
+	<param name="salesOrderID">Initial value of SalesOrderID.</param>
+	<param name="revisionNumber">Initial value of RevisionNumber.</param>
+	<param name="orderDate">Initial value of OrderDate.</param>
+	<param name="dueDate">Initial value of DueDate.</param>
+	<param name="status">Initial value of Status.</param>
+	<param name="onlineOrderFlag">Initial value of OnlineOrderFlag.</param>
+	<param name="salesOrderNumber">Initial value of SalesOrderNumber.</param>
+	<param name="shipMethod">Initial value of ShipMethod.</param>
+	<param name="subTotal">Initial value of SubTotal.</param>
+	<param name="taxAmt">Initial value of TaxAmt.</param>
+	<param name="freight">Initial value of Freight.</param>
+	<param name="totalDue">Initial value of TotalDue.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.SalesOrderID">
+	<summary>
+There are no comments for Property SalesOrderID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.RevisionNumber">
+	<summary>
+There are no comments for Property RevisionNumber in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.OrderDate">
+	<summary>
+There are no comments for Property OrderDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.DueDate">
+	<summary>
+There are no comments for Property DueDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.ShipDate">
+	<summary>
+There are no comments for Property ShipDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.Status">
+	<summary>
+There are no comments for Property Status in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.OnlineOrderFlag">
+	<summary>
+There are no comments for Property OnlineOrderFlag in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.SalesOrderNumber">
+	<summary>
+There are no comments for Property SalesOrderNumber in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.PurchaseOrderNumber">
+	<summary>
+There are no comments for Property PurchaseOrderNumber in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.AccountNumber">
+	<summary>
+There are no comments for Property AccountNumber in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.ShipMethod">
+	<summary>
+There are no comments for Property ShipMethod in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.CreditCardApprovalCode">
+	<summary>
+There are no comments for Property CreditCardApprovalCode in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.SubTotal">
+	<summary>
+There are no comments for Property SubTotal in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.TaxAmt">
+	<summary>
+There are no comments for Property TaxAmt in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.Freight">
+	<summary>
+There are no comments for Property Freight in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.TotalDue">
+	<summary>
+There are no comments for Property TotalDue in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.Comment">
+	<summary>
+There are no comments for Property Comment in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.Address">
+	<summary>
+There are no comments for Address in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.AddressReference">
+	<summary>
+There are no comments for Address in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.Address1">
+	<summary>
+There are no comments for Address1 in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.Address1Reference">
+	<summary>
+There are no comments for Address1 in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.Customer">
+	<summary>
+There are no comments for Customer in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.CustomerReference">
+	<summary>
+There are no comments for Customer in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.SalesOrderHeader.SalesOrderDetail">
+	<summary>
+There are no comments for SalesOrderDetail in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.SalesOrderHeader">
+	<summary>
+There are no comments for SalesModel.SalesOrderHeader in the schema.
+</summary>
+	<KeyProperties>
+SalesOrderID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.Services.CreateServices(System.Int32)">
+	<summary>
+Create a new Services object.
+</summary>
+	<param name="serviceID">Initial value of ServiceID.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.Services.ServiceID">
+	<summary>
+There are no comments for Property ServiceID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Services.ServiceName">
+	<summary>
+There are no comments for Property ServiceName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Services.Active">
+	<summary>
+There are no comments for Property Active in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Services.AcctId">
+	<summary>
+There are no comments for Property AcctId in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Services.Opportunities">
+	<summary>
+There are no comments for Opportunities in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.Services">
+	<summary>
+There are no comments for SalesModel.Services in the schema.
+</summary>
+	<KeyProperties>
+ServiceID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.Tasks.CreateTasks(System.Int32,System.String)">
+	<summary>
+Create a new Tasks object.
+</summary>
+	<param name="taskID">Initial value of TaskID.</param>
+	<param name="taskName">Initial value of TaskName.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.TaskID">
+	<summary>
+There are no comments for Property TaskID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.TaskName">
+	<summary>
+There are no comments for Property TaskName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.Notes">
+	<summary>
+There are no comments for Property Notes in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.StartDate">
+	<summary>
+There are no comments for Property StartDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.EndDate">
+	<summary>
+There are no comments for Property EndDate in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.Status">
+	<summary>
+There are no comments for Property Status in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.PercentComplete">
+	<summary>
+There are no comments for Property PercentComplete in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.Priority">
+	<summary>
+There are no comments for Property Priority in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.Employee">
+	<summary>
+There are no comments for Employee in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.EmployeeReference">
+	<summary>
+There are no comments for Employee in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.Opportunities">
+	<summary>
+There are no comments for Opportunities in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.Tasks.OpportunitiesReference">
+	<summary>
+There are no comments for Opportunities in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.Tasks">
+	<summary>
+There are no comments for SalesModel.Tasks in the schema.
+</summary>
+	<KeyProperties>
+TaskID
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.vGetAllCategories.CreatevGetAllCategories(System.String)">
+	<summary>
+Create a new vGetAllCategories object.
+</summary>
+	<param name="parentProductCategoryName">Initial value of ParentProductCategoryName.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.vGetAllCategories.ParentProductCategoryName">
+	<summary>
+There are no comments for Property ParentProductCategoryName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vGetAllCategories.ProductCategoryName">
+	<summary>
+There are no comments for Property ProductCategoryName in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vGetAllCategories.ProductCategoryID">
+	<summary>
+There are no comments for Property ProductCategoryID in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.vGetAllCategories">
+	<summary>
+There are no comments for SalesModel.vGetAllCategories in the schema.
+</summary>
+	<KeyProperties>
+ParentProductCategoryName
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.vProductAndDescription.CreatevProductAndDescription(System.Int32,System.String,System.String,System.String,System.String)">
+	<summary>
+Create a new vProductAndDescription object.
+</summary>
+	<param name="productID">Initial value of ProductID.</param>
+	<param name="name">Initial value of Name.</param>
+	<param name="productModel">Initial value of ProductModel.</param>
+	<param name="culture">Initial value of Culture.</param>
+	<param name="description">Initial value of Description.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductAndDescription.ProductID">
+	<summary>
+There are no comments for Property ProductID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductAndDescription.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductAndDescription.ProductModel">
+	<summary>
+There are no comments for Property ProductModel in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductAndDescription.Culture">
+	<summary>
+There are no comments for Property Culture in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductAndDescription.Description">
+	<summary>
+There are no comments for Property Description in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.vProductAndDescription">
+	<summary>
+There are no comments for SalesModel.vProductAndDescription in the schema.
+</summary>
+	<KeyProperties>
+ProductID
+Name
+ProductModel
+Culture
+Description
+</KeyProperties>
+</member><member name="M:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.CreatevProductModelCatalogDescription(System.Int32,System.String,System.Guid,System.DateTime)">
+	<summary>
+Create a new vProductModelCatalogDescription object.
+</summary>
+	<param name="productModelID">Initial value of ProductModelID.</param>
+	<param name="name">Initial value of Name.</param>
+	<param name="rowguid">Initial value of rowguid.</param>
+	<param name="modifiedDate">Initial value of ModifiedDate.</param>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.ProductModelID">
+	<summary>
+There are no comments for Property ProductModelID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Summary">
+	<summary>
+There are no comments for Property Summary in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Manufacturer">
+	<summary>
+There are no comments for Property Manufacturer in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Copyright">
+	<summary>
+There are no comments for Property Copyright in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.ProductURL">
+	<summary>
+There are no comments for Property ProductURL in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.WarrantyPeriod">
+	<summary>
+There are no comments for Property WarrantyPeriod in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.WarrantyDescription">
+	<summary>
+There are no comments for Property WarrantyDescription in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.NoOfYears">
+	<summary>
+There are no comments for Property NoOfYears in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.MaintenanceDescription">
+	<summary>
+There are no comments for Property MaintenanceDescription in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Wheel">
+	<summary>
+There are no comments for Property Wheel in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Saddle">
+	<summary>
+There are no comments for Property Saddle in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Pedal">
+	<summary>
+There are no comments for Property Pedal in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.BikeFrame">
+	<summary>
+There are no comments for Property BikeFrame in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Crankset">
+	<summary>
+There are no comments for Property Crankset in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.PictureAngle">
+	<summary>
+There are no comments for Property PictureAngle in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.PictureSize">
+	<summary>
+There are no comments for Property PictureSize in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.ProductPhotoID">
+	<summary>
+There are no comments for Property ProductPhotoID in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Material">
+	<summary>
+There are no comments for Property Material in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Color">
+	<summary>
+There are no comments for Property Color in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.ProductLine">
+	<summary>
+There are no comments for Property ProductLine in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.Style">
+	<summary>
+There are no comments for Property Style in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.RiderExperience">
+	<summary>
+There are no comments for Property RiderExperience in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.rowguid">
+	<summary>
+There are no comments for Property rowguid in the schema.
+</summary>
+</member><member name="P:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription.ModifiedDate">
+	<summary>
+There are no comments for Property ModifiedDate in the schema.
+</summary>
+</member><member name="T:xxxEFDataDLL.SalesModel.vProductModelCatalogDescription">
+	<summary>
+There are no comments for SalesModel.vProductModelCatalogDescription in the schema.
+</summary>
+	<KeyProperties>
+ProductModelID
+Name
+rowguid
+ModifiedDate
+</KeyProperties>
+</member>
+</members>
+</doc>

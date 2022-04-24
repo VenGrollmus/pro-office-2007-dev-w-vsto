@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WordDocumentSampleDeployment
+</name>
+</assembly>
+<members>
+<member name="P:WordDocumentSampleDeployment.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WordDocumentSampleDeployment.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:WordDocumentSampleDeployment.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.#ctor">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.Initialize">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.FinishInitialization">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.InitializeDataBindings">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.InitializeCachedData">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.InitializeData">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.BindToData">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.StartCaching(System.String)">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.StopCaching(System.String)">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.IsCached(System.String)">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.BeginInitialization">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.EndInitialization">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.InitializeControls">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.InitializeComponents">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.NeedsFill(System.String)">
+</member><member name="M:WordDocumentSampleDeployment.ThisDocument.OnShutdown">
+</member><member name="T:WordDocumentSampleDeployment.ThisDocument">
+</member><member name="M:WordDocumentSampleDeployment.Globals.#ctor">
+</member><member name="T:WordDocumentSampleDeployment.Globals">
+</member><member name="T:WordDocumentSampleDeployment.ThisRibbonCollection">
+</member>
+</members>
+</doc>

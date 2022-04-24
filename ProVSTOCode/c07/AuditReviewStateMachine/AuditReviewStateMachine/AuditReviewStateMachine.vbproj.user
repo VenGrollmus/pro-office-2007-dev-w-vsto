@@ -1,0 +1,18 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F8810EC1-6754-47FC-A15F-DFABD2E3FA90}">
+        <DisplayName>AuditReviewStateMachine</DisplayName>
+        <SiteURL>http://teamsite/audit</SiteURL>
+        <ListURL>http://teamsite/audit/Lists/Audit%20Programs/AllItems.aspx</ListURL>
+        <TargetList Id="{f43916b0-b472-4e19-b2f3-4b54dfe1780e}">Audit Programs</TargetList>
+        <HistoryList Id="{22020dd1-0c16-4f01-a688-c498e4277884}">Workflow History</HistoryList>
+        <TaskList Id="{4ddc336c-2840-41e0-b03b-84e54be4df66}">Tasks</TaskList>
+        <AutoAssociate>true</AutoAssociate>
+        <ManualStart>true</ManualStart>
+        <StartOnCreate>true</StartOnCreate>
+        <StartOnChange>true</StartOnChange>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

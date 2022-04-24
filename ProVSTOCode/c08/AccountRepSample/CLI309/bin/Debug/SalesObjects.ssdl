@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SalesOM.Store" Alias="Self" ProviderManifestToken="09.00.3042" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="SalesLT">
+    <EntitySet Name="BuildVersion" EntityType="SalesOM.Store.BuildVersion">
+      <DefiningQuery>SELECT 
+      [BuildVersion].[SystemInformationID] AS [SystemInformationID], 
+      [BuildVersion].[Database Version] AS [Database Version], 
+      [BuildVersion].[VersionDate] AS [VersionDate], 
+      [BuildVersion].[ModifiedDate] AS [ModifiedDate]
+      FROM [dbo].[BuildVersion] AS [BuildVersion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ErrorLog" EntityType="SalesOM.Store.ErrorLog" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="SalesOM.Store.sysdiagrams" Schema="dbo" />
+    <EntitySet Name="Address" EntityType="SalesOM.Store.Address" />
+    <EntitySet Name="Customer" EntityType="SalesOM.Store.Customer" />
+    <EntitySet Name="CustomerAddress" EntityType="SalesOM.Store.CustomerAddress" />
+    <EntitySet Name="Employee" EntityType="SalesOM.Store.Employee" />
+    <EntitySet Name="Opportunities" EntityType="SalesOM.Store.Opportunities" />
+    <EntitySet Name="Product" EntityType="SalesOM.Store.Product" />
+    <EntitySet Name="ProductCategory" EntityType="SalesOM.Store.ProductCategory" />
+    <EntitySet Name="ProductDescription" EntityType="SalesOM.Store.ProductDescription" />
+    <EntitySet Name="ProductModel" EntityType="SalesOM.Store.ProductModel" />
+    <EntitySet Name="ProductModelProductDescription" EntityType="SalesOM.Store.ProductModelProductDescription" />
+    <EntitySet Name="SalesOrderDetail" EntityType="SalesOM.Store.SalesOrderDetail" />
+    <EntitySet Name="SalesOrderHeader" EntityType="SalesOM.Store.SalesOrderHeader" />
+    <EntitySet Name="Services" EntityType="SalesOM.Store.Services" />
+    <EntitySet Name="Tasks" EntityType="SalesOM.Store.Tasks" />
+    <AssociationSet Name="FK_CustomerAddress_Address_AddressID" Association="SalesOM.Store.FK_CustomerAddress_Address_AddressID">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="CustomerAddress" EntitySet="CustomerAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerAddress_Customer_CustomerID" Association="SalesOM.Store.FK_CustomerAddress_Customer_CustomerID">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="CustomerAddress" EntitySet="CustomerAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Opportunities_Customer" Association="SalesOM.Store.FK_Opportunities_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Opportunities" EntitySet="Opportunities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Opportunities_Employee" Association="SalesOM.Store.FK_Opportunities_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Opportunities" EntitySet="Opportunities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Opportunities_Services" Association="SalesOM.Store.FK_Opportunities_Services">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Opportunities" EntitySet="Opportunities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductCategory_ProductCategoryID" Association="SalesOM.Store.FK_Product_ProductCategory_ProductCategoryID">
+      <End Role="ProductCategory" EntitySet="ProductCategory" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductModel_ProductModelID" Association="SalesOM.Store.FK_Product_ProductModel_ProductModelID">
+      <End Role="ProductModel" EntitySet="ProductModel" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID" Association="SalesOM.Store.FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID">
+      <End Role="ProductCategory" EntitySet="ProductCategory" />
+      <End Role="ProductCategory1" EntitySet="ProductCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID" Association="SalesOM.Store.FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID">
+      <End Role="ProductDescription" EntitySet="ProductDescription" />
+      <End Role="ProductModelProductDescription" EntitySet="ProductModelProductDescription" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductModelProductDescription_ProductModel_ProductModelID" Association="SalesOM.Store.FK_ProductModelProductDescription_ProductModel_ProductModelID">
+      <End Role="ProductModel" EntitySet="ProductModel" />
+      <End Role="ProductModelProductDescription" EntitySet="ProductModelProductDescription" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderDetail_Product_ProductID" Association="SalesOM.Store.FK_SalesOrderDetail_Product_ProductID">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="SalesOrderDetail" EntitySet="SalesOrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" Association="SalesOM.Store.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+      <End Role="SalesOrderDetail" EntitySet="SalesOrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_Address_BillTo_AddressID" Association="SalesOM.Store.FK_SalesOrderHeader_Address_BillTo_AddressID">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_Address_ShipTo_AddressID" Association="SalesOM.Store.FK_SalesOrderHeader_Address_ShipTo_AddressID">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_Customer_CustomerID" Association="SalesOM.Store.FK_SalesOrderHeader_Customer_CustomerID">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Employee" Association="SalesOM.Store.FK_Tasks_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Tasks" EntitySet="Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Opportunities" Association="SalesOM.Store.FK_Tasks_Opportunities">
+      <End Role="Opportunities" EntitySet="Opportunities" />
+      <End Role="Tasks" EntitySet="Tasks" />
+    </AssociationSet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'AdventureWorksLT.dbo.BuildVersion' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="BuildVersion">
+    <Key>
+      <PropertyRef Name="SystemInformationID" />
+      <PropertyRef Name="Database Version" />
+      <PropertyRef Name="VersionDate" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="SystemInformationID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Database Version" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="VersionDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogID" />
+    </Key>
+    <Property Name="ErrorLogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorTime" Type="datetime" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="ErrorNumber" Type="int" Nullable="false" />
+    <Property Name="ErrorSeverity" Type="int" />
+    <Property Name="ErrorState" Type="int" />
+    <Property Name="ErrorProcedure" Type="nvarchar" MaxLength="126" />
+    <Property Name="ErrorLine" Type="int" />
+    <Property Name="ErrorMessage" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="AddressLine2" Type="nvarchar" MaxLength="60" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="StateProvince" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CountryRegion" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PostalCode" Type="nvarchar" Nullable="false" MaxLength="15" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NameStyle" Type="bit" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="8" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Suffix" Type="nvarchar" MaxLength="10" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="128" />
+    <Property Name="SalesPerson" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="25" />
+    <Property Name="PasswordHash" Type="varchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordSalt" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerAddress">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="AddressID" Type="int" Nullable="false" />
+    <Property Name="AddressType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="Email" Type="nvarchar" MaxLength="250" />
+    <Property Name="OfficePhoneNumber" Type="nvarchar" MaxLength="25" />
+    <Property Name="MobilePhoneNumber" Type="nvarchar" MaxLength="25" />
+    <Property Name="FaxPhoneNumber" Type="nvarchar" MaxLength="25" />
+    <Property Name="StreetAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="City" Type="nvarchar" MaxLength="150" />
+    <Property Name="State" Type="nchar" MaxLength="2" />
+    <Property Name="PostalCode" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Opportunities">
+    <Key>
+      <PropertyRef Name="OpportunityID" />
+    </Key>
+    <Property Name="OpportunityID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OpportunityName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="SerivceID" Type="int" />
+    <Property Name="Notes" Type="ntext" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="EstCloseDate" Type="datetime" />
+    <Property Name="EstRevenue" Type="money" />
+    <Property Name="EstStartDate" Type="datetime" />
+    <Property Name="EstEndDate" Type="datetime" />
+    <Property Name="Probability" Type="decimal" />
+    <Property Name="Closed" Type="bit" />
+    <Property Name="Category" Type="nvarchar" MaxLength="50" />
+    <Property Name="Source" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductNumber" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="Color" Type="nvarchar" MaxLength="15" />
+    <Property Name="StandardCost" Type="money" Nullable="false" />
+    <Property Name="ListPrice" Type="money" Nullable="false" />
+    <Property Name="Size" Type="nvarchar" MaxLength="5" />
+    <Property Name="Weight" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="ProductCategoryID" Type="int" />
+    <Property Name="ProductModelID" Type="int" />
+    <Property Name="SellStartDate" Type="datetime" Nullable="false" />
+    <Property Name="SellEndDate" Type="datetime" />
+    <Property Name="DiscontinuedDate" Type="datetime" />
+    <Property Name="ThumbNailPhoto" Type="varbinary(max)" />
+    <Property Name="ThumbnailPhotoFileName" Type="nvarchar" MaxLength="50" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="ProductCategoryID" />
+    </Key>
+    <Property Name="ProductCategoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ParentProductCategoryID" Type="int" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductDescription">
+    <Key>
+      <PropertyRef Name="ProductDescriptionID" />
+    </Key>
+    <Property Name="ProductDescriptionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="400" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductModel">
+    <Key>
+      <PropertyRef Name="ProductModelID" />
+    </Key>
+    <Property Name="ProductModelID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CatalogDescription" Type="xml" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductModelProductDescription">
+    <Key>
+      <PropertyRef Name="ProductModelID" />
+      <PropertyRef Name="ProductDescriptionID" />
+      <PropertyRef Name="Culture" />
+    </Key>
+    <Property Name="ProductModelID" Type="int" Nullable="false" />
+    <Property Name="ProductDescriptionID" Type="int" Nullable="false" />
+    <Property Name="Culture" Type="nchar" Nullable="false" MaxLength="6" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SalesOrderDetail">
+    <Key>
+      <PropertyRef Name="SalesOrderID" />
+      <PropertyRef Name="SalesOrderDetailID" />
+    </Key>
+    <Property Name="SalesOrderID" Type="int" Nullable="false" />
+    <Property Name="SalesOrderDetailID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderQty" Type="smallint" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="money" Nullable="false" />
+    <Property Name="UnitPriceDiscount" Type="money" Nullable="false" />
+    <Property Name="LineTotal" Type="numeric" Nullable="false" Precision="38" Scale="6" StoreGeneratedPattern="Computed" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SalesOrderHeader">
+    <Key>
+      <PropertyRef Name="SalesOrderID" />
+    </Key>
+    <Property Name="SalesOrderID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RevisionNumber" Type="tinyint" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" Nullable="false" />
+    <Property Name="DueDate" Type="datetime" Nullable="false" />
+    <Property Name="ShipDate" Type="datetime" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="OnlineOrderFlag" Type="bit" Nullable="false" />
+    <Property Name="SalesOrderNumber" Type="nvarchar" Nullable="false" MaxLength="25" StoreGeneratedPattern="Computed" />
+    <Property Name="PurchaseOrderNumber" Type="nvarchar" MaxLength="25" />
+    <Property Name="AccountNumber" Type="nvarchar" MaxLength="15" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="ShipToAddressID" Type="int" />
+    <Property Name="BillToAddressID" Type="int" />
+    <Property Name="ShipMethod" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreditCardApprovalCode" Type="varchar" MaxLength="15" />
+    <Property Name="SubTotal" Type="money" Nullable="false" />
+    <Property Name="TaxAmt" Type="money" Nullable="false" />
+    <Property Name="Freight" Type="money" Nullable="false" />
+    <Property Name="TotalDue" Type="money" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Services">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="AcctId" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Tasks">
+    <Key>
+      <PropertyRef Name="TaskID" />
+    </Key>
+    <Property Name="TaskID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OpportunityID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="TaskName" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Notes" Type="ntext" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="Status" Type="nvarchar" MaxLength="100" />
+    <Property Name="PercentComplete" Type="int" />
+    <Property Name="Priority" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_CustomerAddress_Address_AddressID">
+    <End Role="Address" Type="SalesOM.Store.Address" Multiplicity="1" />
+    <End Role="CustomerAddress" Type="SalesOM.Store.CustomerAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="CustomerAddress">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerAddress_Customer_CustomerID">
+    <End Role="Customer" Type="SalesOM.Store.Customer" Multiplicity="1" />
+    <End Role="CustomerAddress" Type="SalesOM.Store.CustomerAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="CustomerAddress">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Opportunities_Customer">
+    <End Role="Customer" Type="SalesOM.Store.Customer" Multiplicity="1" />
+    <End Role="Opportunities" Type="SalesOM.Store.Opportunities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Opportunities">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Opportunities_Employee">
+    <End Role="Employee" Type="SalesOM.Store.Employee" Multiplicity="0..1" />
+    <End Role="Opportunities" Type="SalesOM.Store.Opportunities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Opportunities">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Opportunities_Services">
+    <End Role="Services" Type="SalesOM.Store.Services" Multiplicity="0..1" />
+    <End Role="Opportunities" Type="SalesOM.Store.Opportunities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="Opportunities">
+        <PropertyRef Name="SerivceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductCategory_ProductCategoryID">
+    <End Role="ProductCategory" Type="SalesOM.Store.ProductCategory" Multiplicity="0..1" />
+    <End Role="Product" Type="SalesOM.Store.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="ProductCategoryID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductModel_ProductModelID">
+    <End Role="ProductModel" Type="SalesOM.Store.ProductModel" Multiplicity="0..1" />
+    <End Role="Product" Type="SalesOM.Store.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductModel">
+        <PropertyRef Name="ProductModelID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID">
+    <End Role="ProductCategory" Type="SalesOM.Store.ProductCategory" Multiplicity="0..1" />
+    <End Role="ProductCategory1" Type="SalesOM.Store.ProductCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="ProductCategoryID" />
+      </Principal>
+      <Dependent Role="ProductCategory1">
+        <PropertyRef Name="ParentProductCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID">
+    <End Role="ProductDescription" Type="SalesOM.Store.ProductDescription" Multiplicity="1" />
+    <End Role="ProductModelProductDescription" Type="SalesOM.Store.ProductModelProductDescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductDescription">
+        <PropertyRef Name="ProductDescriptionID" />
+      </Principal>
+      <Dependent Role="ProductModelProductDescription">
+        <PropertyRef Name="ProductDescriptionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductModelProductDescription_ProductModel_ProductModelID">
+    <End Role="ProductModel" Type="SalesOM.Store.ProductModel" Multiplicity="1" />
+    <End Role="ProductModelProductDescription" Type="SalesOM.Store.ProductModelProductDescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductModel">
+        <PropertyRef Name="ProductModelID" />
+      </Principal>
+      <Dependent Role="ProductModelProductDescription">
+        <PropertyRef Name="ProductModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderDetail_Product_ProductID">
+    <End Role="Product" Type="SalesOM.Store.Product" Multiplicity="1" />
+    <End Role="SalesOrderDetail" Type="SalesOM.Store.SalesOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="SalesOrderDetail">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+    <End Role="SalesOrderHeader" Type="SalesOM.Store.SalesOrderHeader" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SalesOrderDetail" Type="SalesOM.Store.SalesOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesOrderHeader">
+        <PropertyRef Name="SalesOrderID" />
+      </Principal>
+      <Dependent Role="SalesOrderDetail">
+        <PropertyRef Name="SalesOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_Address_BillTo_AddressID">
+    <End Role="Address" Type="SalesOM.Store.Address" Multiplicity="0..1" />
+    <End Role="SalesOrderHeader" Type="SalesOM.Store.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="BillToAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_Address_ShipTo_AddressID">
+    <End Role="Address" Type="SalesOM.Store.Address" Multiplicity="0..1" />
+    <End Role="SalesOrderHeader" Type="SalesOM.Store.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="ShipToAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_Customer_CustomerID">
+    <End Role="Customer" Type="SalesOM.Store.Customer" Multiplicity="1" />
+    <End Role="SalesOrderHeader" Type="SalesOM.Store.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Employee">
+    <End Role="Employee" Type="SalesOM.Store.Employee" Multiplicity="1" />
+    <End Role="Tasks" Type="SalesOM.Store.Tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Tasks">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Opportunities">
+    <End Role="Opportunities" Type="SalesOM.Store.Opportunities" Multiplicity="1" />
+    <End Role="Tasks" Type="SalesOM.Store.Tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Opportunities">
+        <PropertyRef Name="OpportunityID" />
+      </Principal>
+      <Dependent Role="Tasks">
+        <PropertyRef Name="OpportunityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

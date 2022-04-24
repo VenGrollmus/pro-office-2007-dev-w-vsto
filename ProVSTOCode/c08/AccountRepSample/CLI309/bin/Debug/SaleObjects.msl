@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="SalesLT" CdmEntityContainer="SalesObjects">
+    <EntitySetMapping Name="Address">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.Address)">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="StateProvince" ColumnName="StateProvince" />
+          <ScalarProperty Name="CountryRegion" ColumnName="CountryRegion" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.Customer)">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="NameStyle" ColumnName="NameStyle" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="SalesPerson" ColumnName="SalesPerson" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerAddress">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.CustomerAddress)">
+        <MappingFragment StoreEntitySet="CustomerAddress">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.Employee)">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="OfficePhoneNumber" ColumnName="OfficePhoneNumber" />
+          <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+          <ScalarProperty Name="FaxPhoneNumber" ColumnName="FaxPhoneNumber" />
+          <ScalarProperty Name="StreetAddress" ColumnName="StreetAddress" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Opportunities">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.Opportunities)">
+        <MappingFragment StoreEntitySet="Opportunities">
+          <ScalarProperty Name="OpportunityID" ColumnName="OpportunityID" />
+          <ScalarProperty Name="OpportunityName" ColumnName="OpportunityName" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="EstCloseDate" ColumnName="EstCloseDate" />
+          <ScalarProperty Name="EstRevenue" ColumnName="EstRevenue" />
+          <ScalarProperty Name="EstStartDate" ColumnName="EstStartDate" />
+          <ScalarProperty Name="EstEndDate" ColumnName="EstEndDate" />
+          <ScalarProperty Name="Probability" ColumnName="Probability" />
+          <ScalarProperty Name="Closed" ColumnName="Closed" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.Product)">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="StandardCost" ColumnName="StandardCost" />
+          <ScalarProperty Name="ListPrice" ColumnName="ListPrice" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="SellStartDate" ColumnName="SellStartDate" />
+          <ScalarProperty Name="SellEndDate" ColumnName="SellEndDate" />
+          <ScalarProperty Name="DiscontinuedDate" ColumnName="DiscontinuedDate" />
+          <ScalarProperty Name="ThumbNailPhoto" ColumnName="ThumbNailPhoto" />
+          <ScalarProperty Name="ThumbnailPhotoFileName" ColumnName="ThumbnailPhotoFileName" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.ProductCategory)">
+        <MappingFragment StoreEntitySet="ProductCategory">
+          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductDescription">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.ProductDescription)">
+        <MappingFragment StoreEntitySet="ProductDescription">
+          <ScalarProperty Name="ProductDescriptionID" ColumnName="ProductDescriptionID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductModel">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.ProductModel)">
+        <MappingFragment StoreEntitySet="ProductModel">
+          <ScalarProperty Name="ProductModelID" ColumnName="ProductModelID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CatalogDescription" ColumnName="CatalogDescription" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductModelProductDescription">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.ProductModelProductDescription)">
+        <MappingFragment StoreEntitySet="ProductModelProductDescription">
+          <ScalarProperty Name="ProductModelID" ColumnName="ProductModelID" />
+          <ScalarProperty Name="ProductDescriptionID" ColumnName="ProductDescriptionID" />
+          <ScalarProperty Name="Culture" ColumnName="Culture" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesOrderDetail">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.SalesOrderDetail)">
+        <MappingFragment StoreEntitySet="SalesOrderDetail">
+          <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+          <ScalarProperty Name="SalesOrderDetailID" ColumnName="SalesOrderDetailID" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="UnitPriceDiscount" ColumnName="UnitPriceDiscount" />
+          <ScalarProperty Name="LineTotal" ColumnName="LineTotal" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesOrderHeader">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.SalesOrderHeader)">
+        <MappingFragment StoreEntitySet="SalesOrderHeader">
+          <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+          <ScalarProperty Name="RevisionNumber" ColumnName="RevisionNumber" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OnlineOrderFlag" ColumnName="OnlineOrderFlag" />
+          <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+          <ScalarProperty Name="PurchaseOrderNumber" ColumnName="PurchaseOrderNumber" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="ShipMethod" ColumnName="ShipMethod" />
+          <ScalarProperty Name="CreditCardApprovalCode" ColumnName="CreditCardApprovalCode" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="Freight" ColumnName="Freight" />
+          <ScalarProperty Name="TotalDue" ColumnName="TotalDue" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.Services)">
+        <MappingFragment StoreEntitySet="Services">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="AcctId" ColumnName="AcctId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="IsTypeOf(SalesModel.Tasks)">
+        <MappingFragment StoreEntitySet="Tasks">
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="TaskName" ColumnName="TaskName" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PercentComplete" ColumnName="PercentComplete" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_CustomerAddress_Address_AddressID" TypeName="SalesModel.FK_CustomerAddress_Address_AddressID" StoreEntitySet="CustomerAddress">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+      </EndProperty>
+      <EndProperty Name="CustomerAddress">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SalesOrderHeader_Address_BillTo_AddressID" TypeName="SalesModel.FK_SalesOrderHeader_Address_BillTo_AddressID" StoreEntitySet="SalesOrderHeader">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressID" ColumnName="BillToAddressID" />
+      </EndProperty>
+      <EndProperty Name="SalesOrderHeader">
+        <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+      </EndProperty>
+      <Condition ColumnName="BillToAddressID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SalesOrderHeader_Address_ShipTo_AddressID" TypeName="SalesModel.FK_SalesOrderHeader_Address_ShipTo_AddressID" StoreEntitySet="SalesOrderHeader">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressID" ColumnName="ShipToAddressID" />
+      </EndProperty>
+      <EndProperty Name="SalesOrderHeader">
+        <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+      </EndProperty>
+      <Condition ColumnName="ShipToAddressID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerAddress_Customer_CustomerID" TypeName="SalesModel.FK_CustomerAddress_Customer_CustomerID" StoreEntitySet="CustomerAddress">
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+      <EndProperty Name="CustomerAddress">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Opportunities_Customer" TypeName="SalesModel.FK_Opportunities_Customer" StoreEntitySet="Opportunities">
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+      <EndProperty Name="Opportunities">
+        <ScalarProperty Name="OpportunityID" ColumnName="OpportunityID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SalesOrderHeader_Customer_CustomerID" TypeName="SalesModel.FK_SalesOrderHeader_Customer_CustomerID" StoreEntitySet="SalesOrderHeader">
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+      <EndProperty Name="SalesOrderHeader">
+        <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Opportunities_Employee" TypeName="SalesModel.FK_Opportunities_Employee" StoreEntitySet="Opportunities">
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+      </EndProperty>
+      <EndProperty Name="Opportunities">
+        <ScalarProperty Name="OpportunityID" ColumnName="OpportunityID" />
+      </EndProperty>
+      <Condition ColumnName="EmployeeID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Tasks_Employee" TypeName="SalesModel.FK_Tasks_Employee" StoreEntitySet="Tasks">
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+      </EndProperty>
+      <EndProperty Name="Tasks">
+        <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Opportunities_Services" TypeName="SalesModel.FK_Opportunities_Services" StoreEntitySet="Opportunities">
+      <EndProperty Name="Services">
+        <ScalarProperty Name="ServiceID" ColumnName="SerivceID" />
+      </EndProperty>
+      <EndProperty Name="Opportunities">
+        <ScalarProperty Name="OpportunityID" ColumnName="OpportunityID" />
+      </EndProperty>
+      <Condition ColumnName="SerivceID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Tasks_Opportunities" TypeName="SalesModel.FK_Tasks_Opportunities" StoreEntitySet="Tasks">
+      <EndProperty Name="Opportunities">
+        <ScalarProperty Name="OpportunityID" ColumnName="OpportunityID" />
+      </EndProperty>
+      <EndProperty Name="Tasks">
+        <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Product_ProductCategory_ProductCategoryID" TypeName="SalesModel.FK_Product_ProductCategory_ProductCategoryID" StoreEntitySet="Product">
+      <EndProperty Name="ProductCategory">
+        <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+      </EndProperty>
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <Condition ColumnName="ProductCategoryID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Product_ProductModel_ProductModelID" TypeName="SalesModel.FK_Product_ProductModel_ProductModelID" StoreEntitySet="Product">
+      <EndProperty Name="ProductModel">
+        <ScalarProperty Name="ProductModelID" ColumnName="ProductModelID" />
+      </EndProperty>
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <Condition ColumnName="ProductModelID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SalesOrderDetail_Product_ProductID" TypeName="SalesModel.FK_SalesOrderDetail_Product_ProductID" StoreEntitySet="SalesOrderDetail">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="SalesOrderDetail">
+        <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+        <ScalarProperty Name="SalesOrderDetailID" ColumnName="SalesOrderDetailID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID" TypeName="SalesModel.FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID" StoreEntitySet="ProductCategory">
+      <EndProperty Name="ProductCategory">
+        <ScalarProperty Name="ProductCategoryID" ColumnName="ParentProductCategoryID" />
+      </EndProperty>
+      <EndProperty Name="ProductCategory1">
+        <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+      </EndProperty>
+      <Condition ColumnName="ParentProductCategoryID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID" TypeName="SalesModel.FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID" StoreEntitySet="ProductModelProductDescription">
+      <EndProperty Name="ProductDescription">
+        <ScalarProperty Name="ProductDescriptionID" ColumnName="ProductDescriptionID" />
+      </EndProperty>
+      <EndProperty Name="ProductModelProductDescription">
+        <ScalarProperty Name="ProductModelID" ColumnName="ProductModelID" />
+        <ScalarProperty Name="ProductDescriptionID" ColumnName="ProductDescriptionID" />
+        <ScalarProperty Name="Culture" ColumnName="Culture" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ProductModelProductDescription_ProductModel_ProductModelID" TypeName="SalesModel.FK_ProductModelProductDescription_ProductModel_ProductModelID" StoreEntitySet="ProductModelProductDescription">
+      <EndProperty Name="ProductModel">
+        <ScalarProperty Name="ProductModelID" ColumnName="ProductModelID" />
+      </EndProperty>
+      <EndProperty Name="ProductModelProductDescription">
+        <ScalarProperty Name="ProductModelID" ColumnName="ProductModelID" />
+        <ScalarProperty Name="ProductDescriptionID" ColumnName="ProductDescriptionID" />
+        <ScalarProperty Name="Culture" ColumnName="Culture" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" TypeName="SalesModel.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" StoreEntitySet="SalesOrderDetail">
+      <EndProperty Name="SalesOrderHeader">
+        <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+      </EndProperty>
+      <EndProperty Name="SalesOrderDetail">
+        <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+        <ScalarProperty Name="SalesOrderDetailID" ColumnName="SalesOrderDetailID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CustomerDashboard
+</name>
+</assembly>
+<members>
+<member name="M:CustomerDashboard.Sheet3.#ctor">
+</member><member name="M:CustomerDashboard.Sheet3.Initialize">
+</member><member name="M:CustomerDashboard.Sheet3.FinishInitialization">
+</member><member name="M:CustomerDashboard.Sheet3.InitializeDataBindings">
+</member><member name="M:CustomerDashboard.Sheet3.InitializeCachedData">
+</member><member name="M:CustomerDashboard.Sheet3.InitializeData">
+</member><member name="M:CustomerDashboard.Sheet3.BindToData">
+</member><member name="M:CustomerDashboard.Sheet3.StartCaching(System.String)">
+</member><member name="M:CustomerDashboard.Sheet3.StopCaching(System.String)">
+</member><member name="M:CustomerDashboard.Sheet3.IsCached(System.String)">
+</member><member name="M:CustomerDashboard.Sheet3.BeginInitialization">
+</member><member name="M:CustomerDashboard.Sheet3.EndInitialization">
+</member><member name="M:CustomerDashboard.Sheet3.InitializeControls">
+</member><member name="M:CustomerDashboard.Sheet3.InitializeComponents">
+</member><member name="M:CustomerDashboard.Sheet3.NeedsFill(System.String)">
+</member><member name="T:CustomerDashboard.Sheet3">
+</member><member name="T:CustomerDashboard.Northwind2007DataSet.CustomersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSet.InvoicesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSet.OrdersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSet.CustomersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSet.InvoicesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSet.OrdersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSet.CustomersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSet.InvoicesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSet.OrdersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSetTableAdapters.CustomersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSetTableAdapters.InvoicesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSetTableAdapters.OrdersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:CustomerDashboard.Northwind2007DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(CustomerDashboard.Northwind2007DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:CustomerDashboard.Northwind2007DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(CustomerDashboard.Northwind2007DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:CustomerDashboard.Northwind2007DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(CustomerDashboard.Northwind2007DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:CustomerDashboard.Northwind2007DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:CustomerDashboard.Northwind2007DataSetTableAdapters.TableAdapterManager.UpdateAll(CustomerDashboard.Northwind2007DataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:CustomerDashboard.Northwind2007DataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:CustomerDashboard.ThisWorkbook.#ctor">
+</member><member name="M:CustomerDashboard.ThisWorkbook.Initialize">
+</member><member name="M:CustomerDashboard.ThisWorkbook.FinishInitialization">
+</member><member name="M:CustomerDashboard.ThisWorkbook.InitializeDataBindings">
+</member><member name="M:CustomerDashboard.ThisWorkbook.InitializeCachedData">
+</member><member name="M:CustomerDashboard.ThisWorkbook.InitializeData">
+</member><member name="M:CustomerDashboard.ThisWorkbook.BindToData">
+</member><member name="M:CustomerDashboard.ThisWorkbook.StartCaching(System.String)">
+</member><member name="M:CustomerDashboard.ThisWorkbook.StopCaching(System.String)">
+</member><member name="M:CustomerDashboard.ThisWorkbook.IsCached(System.String)">
+</member><member name="M:CustomerDashboard.ThisWorkbook.BeginInitialization">
+</member><member name="M:CustomerDashboard.ThisWorkbook.EndInitialization">
+</member><member name="M:CustomerDashboard.ThisWorkbook.InitializeControls">
+</member><member name="M:CustomerDashboard.ThisWorkbook.InitializeComponents">
+</member><member name="M:CustomerDashboard.ThisWorkbook.NeedsFill(System.String)">
+</member><member name="M:CustomerDashboard.ThisWorkbook.OnShutdown">
+</member><member name="T:CustomerDashboard.ThisWorkbook">
+</member><member name="M:CustomerDashboard.Globals.#ctor">
+</member><member name="T:CustomerDashboard.Globals">
+</member><member name="T:CustomerDashboard.ThisRibbonCollection">
+</member><member name="M:CustomerDashboard.Sheet2.#ctor">
+</member><member name="M:CustomerDashboard.Sheet2.Initialize">
+</member><member name="M:CustomerDashboard.Sheet2.FinishInitialization">
+</member><member name="M:CustomerDashboard.Sheet2.InitializeDataBindings">
+</member><member name="M:CustomerDashboard.Sheet2.InitializeCachedData">
+</member><member name="M:CustomerDashboard.Sheet2.InitializeData">
+</member><member name="M:CustomerDashboard.Sheet2.BindToData">
+</member><member name="M:CustomerDashboard.Sheet2.StartCaching(System.String)">
+</member><member name="M:CustomerDashboard.Sheet2.StopCaching(System.String)">
+</member><member name="M:CustomerDashboard.Sheet2.IsCached(System.String)">
+</member><member name="M:CustomerDashboard.Sheet2.BeginInitialization">
+</member><member name="M:CustomerDashboard.Sheet2.EndInitialization">
+</member><member name="M:CustomerDashboard.Sheet2.InitializeControls">
+</member><member name="M:CustomerDashboard.Sheet2.InitializeComponents">
+</member><member name="M:CustomerDashboard.Sheet2.NeedsFill(System.String)">
+</member><member name="T:CustomerDashboard.Sheet2">
+</member><member name="P:CustomerDashboard.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:CustomerDashboard.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:CustomerDashboard.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:CustomerDashboard.Sheet1.#ctor">
+</member><member name="M:CustomerDashboard.Sheet1.Initialize">
+</member><member name="M:CustomerDashboard.Sheet1.FinishInitialization">
+</member><member name="M:CustomerDashboard.Sheet1.InitializeDataBindings">
+</member><member name="M:CustomerDashboard.Sheet1.InitializeCachedData">
+</member><member name="M:CustomerDashboard.Sheet1.InitializeData">
+</member><member name="M:CustomerDashboard.Sheet1.BindToData">
+</member><member name="M:CustomerDashboard.Sheet1.StartCaching(System.String)">
+</member><member name="M:CustomerDashboard.Sheet1.StopCaching(System.String)">
+</member><member name="M:CustomerDashboard.Sheet1.IsCached(System.String)">
+</member><member name="M:CustomerDashboard.Sheet1.BeginInitialization">
+</member><member name="M:CustomerDashboard.Sheet1.EndInitialization">
+</member><member name="M:CustomerDashboard.Sheet1.InitializeControls">
+</member><member name="M:CustomerDashboard.Sheet1.InitializeComponents">
+</member><member name="M:CustomerDashboard.Sheet1.NeedsFill(System.String)">
+</member><member name="M:CustomerDashboard.Sheet1.OnShutdown">
+</member><member name="T:CustomerDashboard.Sheet1">
+</member>
+</members>
+</doc>

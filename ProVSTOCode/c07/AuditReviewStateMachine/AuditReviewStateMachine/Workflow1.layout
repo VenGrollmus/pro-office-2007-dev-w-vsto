@@ -1,0 +1,112 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="Workflow1" Location="30, 30" Size="692, 740" AutoSize="False" AutoSizeMargin="16, 24" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.DesignerConnectors>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="stateInProgress" SourceConnectionIndex="0" TargetConnectionEdge="Top" SetStateName="setStateInProgress" SourceStateName="stateInitial" SourceConnectionEdge="Right" TargetActivity="stateInProgress" SourceActivity="stateInitial" EventHandlerName="eventWorkflowInitialized">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="213" Y="110" />
+				<ns0:Point X="233" Y="110" />
+				<ns0:Point X="233" Y="239" />
+				<ns0:Point X="153" Y="239" />
+				<ns0:Point X="153" Y="251" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="stateReview" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateReview" SourceStateName="stateInProgress" SourceConnectionEdge="Right" TargetActivity="stateReview" SourceActivity="stateInProgress" EventHandlerName="eventAuditProgramStepChanged">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="254" Y="316" />
+				<ns0:Point X="602" Y="316" />
+				<ns0:Point X="602" Y="378" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="stateComplete" SourceConnectionIndex="0" TargetConnectionEdge="Top" SetStateName="setStateCompleted" SourceStateName="stateReview" SourceConnectionEdge="Right" TargetActivity="stateComplete" SourceActivity="stateReview" EventHandlerName="eventReviewNoteChanged">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="688" Y="443" />
+				<ns0:Point X="697" Y="443" />
+				<ns0:Point X="697" Y="526" />
+				<ns0:Point X="337" Y="526" />
+				<ns0:Point X="337" Y="538" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="stateInProgress" SourceConnectionIndex="0" TargetConnectionEdge="Top" SetStateName="setStateActivity1" SourceStateName="stateReview" SourceConnectionEdge="Right" TargetActivity="stateInProgress" SourceActivity="stateReview" EventHandlerName="eventReviewNoteChanged">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="688" Y="443" />
+				<ns0:Point X="697" Y="443" />
+				<ns0:Point X="697" Y="243" />
+				<ns0:Point X="153" Y="243" />
+				<ns0:Point X="153" Y="251" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+	</StateMachineWorkflowDesigner.DesignerConnectors>
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Name="stateInitial" Location="46, 69" Size="179, 102" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<EventDrivenDesigner Size="381, 375" Name="eventWorkflowInitialized" Location="54, 100">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="onWorkflowActivated1" Location="179, 162" />
+						<IfElseDesigner Size="361, 234" Name="ifElseActivity" Location="64, 222">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Size="150, 134" Name="ifInProgress" Location="83, 293">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Size="130, 53" Name="setStateInProgress" Location="93, 355" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Size="150, 134" Name="ifNotInProgress" Location="256, 293">
+									<IfElseBranchDesigner.Designers>
+										<TerminateDesigner Size="130, 41" Name="terminateActivity1" Location="266, 361" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="stateComplete" Location="257, 538" Size="160, 80" AutoSizeMargin="16, 24" />
+		<StateDesigner Name="stateInProgress" Location="48, 251" Size="210, 110" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 109" Name="stateInitializationActivity1" Location="56, 282" />
+				<EventDrivenDesigner Size="381, 363" Name="eventAuditProgramStepChanged" Location="56, 306">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="onWorkflowItemChanged" Location="181, 368" />
+						<IfElseDesigner Size="361, 222" Name="ifElseActivity2" Location="66, 428">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Size="150, 122" Name="ifComplete" Location="85, 499">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateReview" Location="95, 561" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Size="150, 122" Name="ifElseBranchActivity2" Location="258, 499" />
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="stateReview" Location="513, 378" Size="179, 80" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<EventDrivenDesigner Size="381, 375" Name="eventReviewNoteChanged" Location="177, 148">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="onReviewNoteChanged" Location="302, 210" />
+						<IfElseDesigner Size="361, 234" Name="ifElseActivity1" Location="187, 270">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Size="150, 134" Name="ifCompleted" Location="206, 341">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Size="130, 53" Name="setStateCompleted" Location="216, 403" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Size="150, 134" Name="ifStillInProgress" Location="379, 341">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateActivity1" Location="389, 409" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<StateInitializationDesigner Size="150, 122" Name="stateInitializationActivity2" Location="169, 135">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="130, 41" Name="createReviewNote" Location="179, 197" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+	</StateMachineWorkflowDesigner.Designers>
+</StateMachineWorkflowDesigner>

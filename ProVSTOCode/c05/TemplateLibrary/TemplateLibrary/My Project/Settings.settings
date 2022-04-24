@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="TemplatesFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\_Projects\MasteringVSTO\Templates</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
