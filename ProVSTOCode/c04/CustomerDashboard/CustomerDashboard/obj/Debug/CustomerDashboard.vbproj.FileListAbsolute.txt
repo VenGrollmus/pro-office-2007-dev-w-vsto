@@ -13,3 +13,11 @@ C:\_Projects\ProVSTO\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerD
 C:\_Projects\ProVSTO\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.dll
 C:\_Projects\ProVSTO\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.xml
 C:\_Projects\ProVSTO\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.pdb
+D:\Data\Documents\GitHub\pro-office-2007-dev-w-vsto\ProVSTOCode\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.dll
+D:\Data\Documents\GitHub\pro-office-2007-dev-w-vsto\ProVSTOCode\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.xml
+D:\Data\Documents\GitHub\pro-office-2007-dev-w-vsto\ProVSTOCode\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.pdb
+D:\Data\Documents\GitHub\pro-office-2007-dev-w-vsto\ProVSTOCode\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.vbproj.AssemblyReference.cache
+D:\Data\Documents\GitHub\pro-office-2007-dev-w-vsto\ProVSTOCode\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.Resources.resources
+D:\Data\Documents\GitHub\pro-office-2007-dev-w-vsto\ProVSTOCode\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.Sheet1.resources
+D:\Data\Documents\GitHub\pro-office-2007-dev-w-vsto\ProVSTOCode\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.vbproj.GenerateResource.cache
+D:\Data\Documents\GitHub\pro-office-2007-dev-w-vsto\ProVSTOCode\c04\CustomerDashboard\CustomerDashboard\obj\Debug\CustomerDashboard.vbproj.CoreCompileInputs.cache
